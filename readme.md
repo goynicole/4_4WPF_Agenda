@@ -32,7 +32,7 @@
 | subject       | TEXT        | |
 
 
-# Partie 1:
+**# Partie 1:**
 
 ## Exercice 1 :
 Créer les classes de toutes vos tables dans Visual Studio  en utilisant le **Framework Entity** et le modèle **Code First** à partir de la base de données.
@@ -176,7 +176,7 @@ Ajouter tous les élements WPF permettant la modification d'un rendez-vous. Perm
 
 ## Exercice 7 :
 
-Ajouter un bouton supprimmer et permettre la suppression d'un rendez-vous.
+Ajouter un bouton supprimer et permettre la suppression d'un rendez-vous.
 
 
 
