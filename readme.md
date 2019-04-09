@@ -32,7 +32,7 @@
 | subject       | TEXT        | |
 
 
-**# Partie 1:**
+# Partie 1:
 
 ## Exercice 1 :
 Créer les classes de toutes vos tables dans Visual Studio  en utilisant le **Framework Entity** et le modèle **Code First** à partir de la base de données.
