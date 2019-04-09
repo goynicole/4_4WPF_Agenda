@@ -1,0 +1,38 @@
+﻿<Page x:Class="Agenda2.AddAppointment"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="AddAppointment" Background="DarkRed">
+    
+    <Grid>
+        <StackPanel Margin="0,10,0,0">
+            <TextBlock Text="Ajouter un RDV" FontSize="48" HorizontalAlignment="Center" FontFamily="EucrosiaUPC" FontWeight="Bold" Margin="0,0,0,23">
+                <TextBlock.Foreground>
+                    <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                        <GradientStop Color="#FF554F43" Offset="0"/>
+                        <GradientStop Color="#FFF7C14D" Offset="1"/>
+                    </LinearGradientBrush>
+                </TextBlock.Foreground>
+            </TextBlock>
+            <Grid>
+                <StackPanel Margin="166,0,167,0">
+                    <Label Content="Client :" FontWeight="Bold"/>
+                    <ComboBox ItemsSource="{Binding}" DisplayMemberPath="Lastname" SelectedValuePath="CustomerID" Name="CustomersList_ComboBox"/>
+                    <Label Content="Courtier :" FontWeight="Bold"/>
+                    <ComboBox ItemsSource="{Binding}" DisplayMemberPath="Lastname" SelectedValuePath="BrokerID" Name="BrokersList_ComboBox"/>
+                    <Label Content="Objet du rendez-vous :" FontWeight="Bold"/>
+                    <TextBox x:Name="subjectTextBox" Text="{Binding Subject, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}"/>
+                    <Label Content="Jour du RDV :" FontWeight="Bold"/>
+                    <!--installation du package==> Xceeded.Toolkit-->
+                    <xctk:DateTimePicker x:Name="dtpStartTime" Format="Custom" FormatString="dd/MM/yyyy HH:mm"/>
+                    <!--<DatePicker x:Name="date_DatePicker" />-->
+                    <Button x:Name="Save" Content="Enregistrer" VerticalAlignment="Top" Width="121" Click="Save_Click" Margin="150,10,151,5" Background="#FF5A6A8D" Foreground="#FF1DF51D" BorderBrush="#FF21BF4C" FontWeight="Bold"/>
+                </StackPanel>
+            </Grid>
+        </StackPanel>
+    </Grid>
+</Page>
