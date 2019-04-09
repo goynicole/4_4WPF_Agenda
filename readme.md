@@ -1,5 +1,36 @@
 # Client lourd : Agenda
 >Reprendre la base de données créée pour l'Agenda de l'exercice client léger.
+>Rappel :
+>1. Table **brokers**  :  
+
+| Colonne     | Type      | Attributs                     |
+|-------------|-----------|-------------------------------|
+| idBroker    | INT       | Auto-incrémenté, clé primaire |
+| lastname    | NVARCHAR  | 50 |
+| firstname   | NVARCHAR  | 50 |
+| mail        | VARCHAR   | 100 |
+| phoneNumber | VARCHAR   | 10 |
+
+>2. Table **customers** contenant les éléments suivants :
+
+| Colonne       | Type      | Attributs                     |
+| ------------- | --------- | ----------------------------- |
+| idCustomer    | INT       | Auto-incrémenté, clé primaire |
+| lastname      | NVARCHAR  | 50 |
+| firstname     | NVARCHAR  | 50 |
+| mail          | VARCHAR   | 100 |
+| phoneNumber   | VARCHAR   | 10 |
+| budget        | INT       | |
+
+>3. Table **appointments** contenant les éléments suivants :  
+
+| Colonne       | Type        | Attributs                     |
+| ------------- | ----------- | ----------------------------- |
+| idAppointment | INT         | Auto-incrémenté, clé primaire |
+| dateHour      | DATETIME    | |
+| subject       | TEXT        | |
+
+
 
 # Partie 1:
 ## Exercice 1 :
