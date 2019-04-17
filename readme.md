@@ -2,7 +2,7 @@
 >Reprendre la base de données créée pour l'Agenda de l'exercice client léger.
 
 >Rappel :
->1. Table **brokers**  :  
+>1. Table **brokers**  : 
 
 | Colonne     | Type      | Attributs                     |
 |-------------|-----------|-------------------------------|
